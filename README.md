@@ -23,6 +23,7 @@ Her çalışan bir ve yalnız bir ofiste çalışır.
 
 Class Diyagramı
 
+`
 +-------------------+
 |     Üniversite    |
 +-------------------+
@@ -47,7 +48,7 @@ Class Diyagramı
                      +-------------------+
                      | - pozisyon        |
                      +-------------------+
-
+`
 
 Açıklamalar:
 1..*: "Bir üniversitenin bir veya daha fazla departmanı/ofisi/çalışanı olabilir."
