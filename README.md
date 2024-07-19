@@ -1,6 +1,6 @@
 # universite-yonetim-sistemi
 
-Bu tür bir sistem için oluşturulabilecek basit bir Class diyagramını adım adım açıklayacağım. Bu örnekte, "Üniversite", "Departman", "Ofis" ve "Çalışan" olmak üzere dört ana sınıf bulunmaktadır. İlişkiler ve kardinaliteler (birlikteliklerin nicelikleri) ile bu yapıyı tanımlayacağım.
+Bu tür bir sistem için oluşturulabilecek basit bir Class diyagramını  açıklayacağım. Bu örnekte, "Üniversite", "Departman", "Ofis" ve "Çalışan" olmak üzere dört ana sınıf bulunmaktadır. İlişkiler ve kardinaliteler (birlikteliklerin nicelikleri) ile bu yapıyı tanımlayacağım.
 
 Üniversite Sınıfı:
 
@@ -21,34 +21,8 @@ Her çalışan bir ve yalnız bir ofiste çalışır.
 Çalışanlar ya profesör ya da memur olarak sınıflandırılabilir.
 
 
-Class Diyagramı
+![Class Diagram](./class_diagram.png)
 
-`
-+-------------------+
-|     Üniversite    |
-+-------------------+
-| - departmanlar    |
-| - ofisler         |
-| - çalışanlar      |
-+-------------------+
-          |
-          | 1
-          |
-          v
-+-------------------+          +-------------------+
-|     Departman     |<-------->|        Ofis       |
-+-------------------+          +-------------------+
-| - ofisler         | 1      * | - çalışanlar      |
-+-------------------+          +-------------------+
-          | *                    | 1
-          |                      |
-          |                      v
-          |          +-------------------+
-          +--------->|      Çalışan      |
-                     +-------------------+
-                     | - pozisyon        |
-                     +-------------------+
-`
 
 Açıklamalar:
 1..*: "Bir üniversitenin bir veya daha fazla departmanı/ofisi/çalışanı olabilir."
