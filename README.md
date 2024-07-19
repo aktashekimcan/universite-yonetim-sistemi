@@ -21,7 +21,7 @@ Her çalışan bir ve yalnız bir ofiste çalışır.
 Çalışanlar ya profesör ya da memur olarak sınıflandırılabilir.
 
 
-![Class Diagram](./class_diagram.png)
+![Class Diagram](./class_diagram.png.png)
 
 
 Açıklamalar:
